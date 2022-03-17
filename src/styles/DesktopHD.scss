@@ -35,15 +35,16 @@
     border-radius: $base-radius;
     z-index: -1;
   }
-
   .container {
     @include container();
   }
 
   .header {
+    min-height: 100vh;
     padding: 50px 0 30px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-image: url("../images/logo-symbol.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -57,7 +58,6 @@
     }
 
     &__bar {
-      margin-bottom: clamp(130px, calc(360 / 1600 * 100vw), 360px);
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -152,7 +152,6 @@
     &__title {
       @extend %lagre-style-text;
       margin: 0;
-      margin-bottom: clamp(160px, calc(405 / 1600 * 100vw), 405px);
       text-align: center;
       color: $base-text-color;
     }

@@ -3,6 +3,10 @@
 
 @media screen and (max-width: 1023px) {
   .main {
+    .container {
+      @include container(1980px, 0px);
+    }
+
     .header {
       &__bar {
         flex-direction: column;
@@ -12,6 +16,7 @@
         }
 
         .header-actions {
+          padding-left: 60px;
           align-items: flex-start;
           gap: 30px;
 
@@ -23,6 +28,7 @@
     }
 
     .experience {
+      padding: 60px;
       overflow-x: hidden;
 
       &__wrapper {
@@ -43,9 +49,12 @@
       }
     }
 
-    .services__grid {
-      .services__item {
-        flex-basis: calc((100% / 2) - 60px);
+    .services {
+      padding: 0 60px 0;
+      &__grid {
+        .services__item {
+          flex-basis: calc((100% / 2) - 60px);
+        }
       }
     }
   }
