@@ -1,0 +1,90 @@
+@import "variables";
+@import "mixins";
+
+@media screen and (max-width: 1023px) {
+  .main {
+    .header {
+      &__bar {
+        flex-direction: column;
+
+        .logo-container {
+          display: none;
+        }
+
+        .header-actions {
+          align-items: flex-start;
+          gap: 30px;
+
+          .tablet__logo {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .experience {
+      overflow-x: hidden;
+
+      &__wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .experience__list {
+          flex-direction: row;
+          padding: 0 0 60px 0;
+          justify-content: center;
+          border-right: none;
+        }
+
+        .experience__descr {
+          border-top: 4px solid rgba(255, 255, 255, 0.3);
+          padding: 64px 0 0 0;
+        }
+      }
+    }
+
+    .services__grid {
+      .services__item {
+        flex-basis: calc((100% / 2) - 60px);
+      }
+    }
+  }
+
+  .team {
+    &-card {
+      flex-direction: column;
+
+      &__image {
+        flex-basis: 500px;
+      }
+    }
+
+    &-card__content {
+      flex-basis: 436px;
+    }
+  }
+
+  .clients__grid {
+    .clients__item {
+      flex-basis: calc(100% / 3);
+    }
+  }
+
+  .publications {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+
+      .publications__item:nth-child(3) {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  .footer {
+    &-contacts-2,
+    &-copy {
+      white-space: nowrap;
+    }
+  }
+}

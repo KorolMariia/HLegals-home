@@ -1,0 +1,240 @@
+@import "variables";
+@import "mixins";
+
+@media screen and (max-width: 767px) {
+  .main {
+    padding: 0;
+    padding-bottom: 60px;
+
+    .container {
+      @include container(1980px, 0px);
+    }
+
+    .header {
+      padding-top: 0;
+      gap: 0;
+
+      .nav-open {
+        display: block;
+      }
+
+      &__bar {
+        flex-direction: column-reverse;
+
+        .logo-container {
+          padding: 15px 15px 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .header__logo {
+          &--img {
+            max-width: 70px;
+            max-height: 32px;
+          }
+        }
+
+        .header-actions {
+          align-items: stretch;
+          gap: 0;
+
+          .tablet__logo {
+            display: none;
+          }
+
+          .header-contacts {
+            justify-content: space-between;
+            padding: 10px 15px;
+            background: rgba(245, 245, 250, 0.2);
+
+            .fas,
+            &__adress,
+            &__social-link {
+              display: none;
+            }
+          }
+        }
+
+        .nav {
+          &-close {
+            display: block;
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            border: none;
+          }
+
+          &__list {
+            display: flex;
+            padding: 64px 20px 20px;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 11px;
+            position: fixed;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            border-radius: 12px 12px 0px 0px;
+            transition: transform 0.5s ease-out;
+
+            .nav__item {
+              display: flex;
+              flex-direction: column;
+              margin-left: 0;
+            }
+
+            .nav__link {
+              background: #f5f5fa;
+              border-radius: 12px;
+              color: #24a3ff;
+              padding: 8px;
+              font-size: 24px;
+              line-height: 28px;
+              text-align: center;
+
+              &:hover {
+                color: $primary-color;
+              }
+            }
+          }
+          #nav-trigger:checked ~ .nav__list {
+            transform: translateY(-100%);
+            z-index: 10;
+          }
+
+          .background {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: black;
+          }
+
+          #nav-trigger:checked ~ .background {
+            display: block;
+            opacity: 0.5;
+          }
+        }
+      }
+
+      &__title {
+        padding: 0 30px;
+      }
+    }
+
+    .experience {
+      padding: 30px;
+
+      &__wrapper {
+        .experience__list {
+          padding-bottom: 30px;
+
+          .experience__item {
+            font-size: 30px;
+            line-height: 37px;
+          }
+        }
+        .experience__descr {
+          padding-top: 34px;
+
+          &--title {
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+    .services {
+      padding: 0 30px;
+
+      &__title {
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 37px;
+      }
+
+      .services__grid {
+        .services__item {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+
+  .clients__grid {
+    .clients__item {
+      flex-basis: 100%;
+
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(9),
+      &:nth-child(10),
+      &:nth-child(11),
+      &:last-of-type {
+        display: none;
+      }
+    }
+  }
+
+  .team {
+    .container {
+      @include container(1980px, 30px);
+    }
+    &-card__content {
+      flex-basis: 350px;
+    }
+
+    .team-card__descr {
+      font-size: 30px;
+      line-height: 37px;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  .publications {
+    .container {
+      @include container(1980px, 30px);
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+  }
+
+  .footer {
+    .container {
+      @include container(1980px, 30px);
+    }
+
+    &-actions {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      .footer-contacts {
+        gap: 21px;
+
+        &-1 {
+          flex-direction: column;
+        }
+
+        &-2 {
+          flex-direction: column;
+        }
+
+        .fa-circle {
+          display: none;
+        }
+      }
+    }
+  }
+}

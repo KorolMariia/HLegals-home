@@ -1,0 +1,51 @@
+@import "variables";
+@import "mixins";
+
+@media screen and (max-width: 1919px) {
+  .main {
+    .container {
+      @include container(2040px, 60px);
+    }
+
+    .experience {
+      &__descr {
+        padding: 43px 0 43px 60px;
+      }
+    }
+  }
+
+  .team {
+    .container {
+      @include container(2040px, 60px);
+    }
+
+    &-card__content {
+      flex-basis: 920px;
+    }
+  }
+
+  .clients {
+    margin-bottom: 0;
+
+    .container {
+      padding: 0;
+    }
+
+    &__item {
+      border-radius: 0;
+    }
+    .clients__item:first-of-type,
+    .clients__item:nth-child(4),
+    .clients__item:nth-child(9),
+    .clients__item:last-of-type {
+      border-radius: 0;
+    }
+  }
+
+  .publications,
+  .footer {
+    .container {
+      @include container(2040px, 60px);
+    }
+  }
+}
