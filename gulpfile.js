@@ -1,15 +1,22 @@
 const gulp = require ('gulp');
 const sass = require ('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
-// const concat = require('gulp-concat');
+const concat = require('gulp-concat');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 const clean = require('gulp-clean');
 
+
 function sassTask() {
- return gulp.src ('src/styles/style.scss',{ base: 'src' })
-            // .pipe(concat('styles/style.min.css'))
+ return gulp.src(['src/styles/font.scss', 
+                  'src/styles/global.scss',
+                  'src/styles/DesktopHD.scss',
+                  'src/styles/DesktopSD.scss',
+                  'src/styles/TabletHD.scss',
+                  'src/styles/TabletSD.scss',
+                  'src/styles/Mobile.scss',])
             .pipe(sass({outputStyle:'compressed'}))
+            .pipe(concat('styles/style.min.css'))
             .pipe(autoprefixer({overrideBrowserslist: ['last 10 versions'], grid: 'autoplace'}))
             .pipe(gulp.dest('dist'));
  }

@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- AMESOWE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="styles/style.min.css">
 
     <title>HLegals - Homepage</title>
 </head>
 
 <body>
 
+    <!-- MAIN -->
     <main class="main">
 
         <div class="container">
@@ -199,32 +201,73 @@
         </div>
     </main>
 
-    <section class="team">
+    <!-- TEAM -->
+    <section lang="uk" class="team">
         <div class="container">
-            <div class="team-card">
-                <div class="team-card__image">
-                    <img class="team-card__img" src="images/team-img.jpg" alt="Foto Oleksandr Oleksandrovsky">
-                </div>
-                <div class="team-card__content">
-                    <h2 class="team-card__title">
-                        <a class="team-card__link" href=" #">команда &gt;</a>
-                    </h2>
-                    <p class="team-card__descr">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
-                        вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
-                    <h3 class="team-card__person">Олександр Олександровський</h3>
-                    <span class="team-card__post">Керуючий партнер</span>
-                </div>
+            <input type="radio" name="team-slide" id="team-1" class="team-card__trigger" checked />
+            <input type="radio" name="team-slide" id="team-2" class="team-card__trigger" />
+            <input type="radio" name="team-slide" id="team-3" class="team-card__trigger" />
+            <div class="cards-wrapper">
+                <ul class="team-cards">
+                    <li class="team-card">
+                        <div class="team-card__image">
+                            <img class="team-card__img" src="images/team_1.jpg" alt="Foto Oleksandr Oleksandrovsky">
+                        </div>
+                        <div class="team-card__content">
+                            <h2 class="team-card__title">
+                                <a class="team-card__link" href=" #">команда &gt;</a>
+                            </h2>
+                            <p class="team-card__descr">Ми звикли брати на себе відповідальність та завжди гарантуємо
+                                чесну,
+                                вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
+                            <h3 class="team-card__person">Олександр Олександровський</h3>
+                            <span class="team-card__post">Керуючий партнер</span>
+                        </div>
+                    </li>
+                    <li class="team-card">
+                        <div class="team-card__image">
+                            <img class="team-card__img" src="images/team_2.png" alt="Foto Oksana Kobzar">
+                        </div>
+                        <div class="team-card__content">
+                            <h2 class="team-card__title">
+                                <a class="team-card__link" href=" #">команда &gt;</a>
+                            </h2>
+                            <p class="team-card__descr">Ми звикли брати на себе відповідальність та завжди гарантуємо
+                                чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
+                            <h3 class="team-card__person">Оксана Кобзар</h3>
+                            <span class="team-card__post">Equity partner, Attorney-at-law</span>
+                        </div>
+                    </li>
+                    <li class="team-card">
+                        <div class="team-card__image">
+                            <img class="team-card__img" src="images/team_3.png" alt="Foto Oleksandr Oleksandrovsky">
+                        </div>
+                        <div class="team-card__content">
+                            <h2 class="team-card__title">
+                                <a class="team-card__link" href=" #">команда &gt;</a>
+                            </h2>
+                            <p class="team-card__descr">Ми звикли брати на себе відповідальність та завжди гарантуємо
+                                чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
+                            <h3 class="team-card__person">Владислав Мельник</h3>
+                            <span class="team-card__post">Associate</span>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="card-switchers">
+                    <li>
+                        <label for="team-1" class="card__switcher"></label>
+                    </li>
+                    <li>
+                        <label for="team-2" class="card__switcher"></label>
+                    </li>
+                    <li>
+                        <label for="team-3" class="card__switcher"></label>
+                    </li>
+                </ul>
             </div>
-            <svg class="team-slider" width="78" height="16" viewBox="0 0 78 16" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="8" cy="8" r="8" fill="#24A3FF" />
-                <circle opacity="0.2" cx="39" cy="8" r="8" fill="#24A3FF" />
-                <circle opacity="0.2" cx="70" cy="8" r="8" fill="#24A3FF" />
-            </svg>
-
-        </div>
     </section>
 
+    <!-- CLIENTS -->
     <section class="clients">
         <div class="container">
 
@@ -270,6 +313,7 @@
         </div>
     </section>
 
+    <!-- PUBLICATIONS -->
     <aside class="publications">
         <div class="container">
             <h2 class="publications__subtitle">
@@ -322,6 +366,7 @@
         </div>
     </aside>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
 

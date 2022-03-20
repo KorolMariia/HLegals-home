@@ -3,14 +3,23 @@
 
 @media screen and (max-width: 1439px) {
   .main {
+    .container {
+      @include container(2040px, 0px);
+    }
+    .header__bar {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
     .experience {
-      .container {
-        @include container(2040px, 0px);
-      }
+      padding: 60px;
 
       .experience__descr {
         padding: 10px 0 10px 60px;
       }
+    }
+    .services {
+      padding: 0 60px 0;
     }
   }
 

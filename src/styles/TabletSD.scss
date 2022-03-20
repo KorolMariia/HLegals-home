@@ -16,7 +16,6 @@
         }
 
         .header-actions {
-          padding-left: 60px;
           align-items: flex-start;
           gap: 30px;
 
@@ -28,7 +27,6 @@
     }
 
     .experience {
-      padding: 60px;
       overflow-x: hidden;
 
       &__wrapper {
@@ -50,7 +48,6 @@
     }
 
     .services {
-      padding: 0 60px 0;
       &__grid {
         .services__item {
           flex-basis: calc((100% / 2) - 60px);

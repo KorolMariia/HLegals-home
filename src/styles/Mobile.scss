@@ -19,6 +19,7 @@
       }
 
       &__bar {
+        padding: 0;
         flex-direction: column-reverse;
 
         .logo-container {
@@ -36,7 +37,6 @@
         }
 
         .header-actions {
-          padding-left: 0;
           align-items: stretch;
           gap: 0;
 
@@ -58,6 +58,8 @@
         }
 
         .nav {
+          z-index: 10;
+
           &-close {
             display: block;
             position: absolute;
