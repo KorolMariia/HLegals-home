@@ -2,4 +2,4 @@
 
 https://korolmariia.github.io/HLegals-home/ - Demo
 
-HTML, Sass, JS, Gulp, Adaptive, responsive, @media-queries
+HTML, CSS, SASS, JS, Gulp, Adaptive, responsive, @media-queries
