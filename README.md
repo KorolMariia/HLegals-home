@@ -1,5 +1,11 @@
 # HLegals-home
 
-https://korolmariia.github.io/HLegals-home/ - Demo
+[Demo](https://korolmariia.github.io/HLegals-home/)
 
-HTML, CSS, SASS, JS, Gulp, Adaptive, responsive, @media-queries
+I used:
+*HTML
+*CSS 
+*SASS 
+*JS 
+*Gulp 
+*Adaptive, responsive, @media-queries
