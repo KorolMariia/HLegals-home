@@ -4,38 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- AMESOWE -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"><!-- AMESOWE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- STYLE -->
-    <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="stylesheet" href="dist/styles/style.min.css">
     <title>HLegals - Homepage</title>
 </head>
 
 <body>
-
     <!-- MAIN -->
     <main class="main">
         <div class="container">
-            <div class="splash">
-                @@include('components/header.html')
-                <h2 class="splash__title"> you legal solutions provider </h2>
-                <a class="splash__button" href="#experience">
-                    <svg class="splash__button--img" width="42" height="42" viewBox="0 0 42 42" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+            <div class="splash">@@include('components/header.html')<h2 class="splash__title">you legal solutions
+                    provider</h2><a class="splash__button" href="#experience"><svg class="splash__button--img"
+                        width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle class="splash__button--img" opacity="0.5" cx="21" cy="21" r="20" stroke="white"
                             stroke-width="2" />
                         <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
-                    </svg>
-                </a>
-            </div>
-
-            <!-- EXPERIENCE -->
+                    </svg></a></div><!-- EXPERIENCE -->
             <section class="experience" id="experience">
                 <div class="container">
                     <div class="experience__wrapper">
                         <ul class="experience__list">
-                            <li class="experience__item active"> Consistent</li>
+                            <li class="experience__item active">Consistent</li>
                             <li class="experience__item">Customer oriented</li>
                             <li class="experience__item">Innovative</li>
                             <li class="experience__item">Business oriented</li>
@@ -43,100 +34,74 @@
                         <div class="experience__descr">
                             <h3 class="experience__descr--title">We turn the idea of legal services</h3>
                             <p class="experience__descr--content">Consolidating many years of experience and practice,
-                                the
-                                company's lawyers accompany complex projects and achieve a number of important decisions
-                                for
-                                the industry. Many of them form the practice of applying the law of the sea in Ukraine.
-                            </p>
+                                the company's lawyers accompany complex projects and achieve a number of important
+                                decisions for the industry. Many of them form the practice of applying the law of the
+                                sea in Ukraine.</p>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <!-- SERVICES -->
+            </section><!-- SERVICES -->
             <section class="services">
-                <h2 class="services__subtitle">
-                    <a class="services__link" href=" #">Services &gt;</a>
-                </h2>
+                <h2 class="services__subtitle"><a class="services__minilink" href="services.html">Services &gt;</a></h2>
                 @@include('components/services.html')
             </section>
         </div>
-    </main>
-
-    <!-- TEAM -->
-    <section lang="uk" class="team">
-        <div class="container">
-            <input type="radio" name="team-slide" id="team-1" class="team-card__trigger" checked />
-            <input type="radio" name="team-slide" id="team-2" class="team-card__trigger" />
-            <input type="radio" name="team-slide" id="team-3" class="team-card__trigger" />
+    </main><!-- TEAM -->
+    <section class="team">
+        <div class="container"><input type="radio" name="team-slide" id="team-1" class="team-card__trigger"
+                checked="checked"> <input type="radio" name="team-slide" id="team-2" class="team-card__trigger"> <input
+                type="radio" name="team-slide" id="team-3" class="team-card__trigger">
             <div class="cards-wrapper">
                 <ul class="team-cards">
                     <li class="team-card">
-                        <div class="team-card__image">
-                            <img class="team-card__img" src="images/team_1.jpg" alt="Foto Oleksandr Oleksandrovsky">
-                        </div>
+                        <div class="team-card__image"><img class="team-card__img" src="images/team_1.jpg"
+                                alt="Foto Oleksandr Oleksandrovsky"></div>
                         <div class="team-card__content">
-                            <h2 class="team-card__title">
-                                <a class="team-card__link" href=" #">команда &gt;</a>
-                            </h2>
-                            <p class="team-card__descr">Ми звикли брати на себе відповідальність та завжди гарантуємо
-                                чесну,
-                                вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
-                            <h3 class="team-card__person">Олександр Олександровський</h3>
-                            <span class="team-card__post">Керуючий партнер</span>
+                            <h2 class="team-card__title"><a class="team-card__link" href="#">team &gt;</a></h2>
+                            <p class="team-card__descr">We are used to taking responsibility and always guarantee
+                                honest, timely help, even in situations where most are powerless.</p>
+                            <h3 class="team-card__person">Alexander Alexandrovsky</h3><span
+                                class="team-card__post">Managing partner</span>
                         </div>
                     </li>
                     <li class="team-card">
-                        <div class="team-card__image">
-                            <img class="team-card__img" src="images/team_2.png" alt="Foto Oksana Kobzar">
-                        </div>
+                        <div class="team-card__image"><img class="team-card__img" src="images/team_2.png"
+                                alt="Foto Oksana Kobzar"></div>
                         <div class="team-card__content">
-                            <h2 class="team-card__title">
-                                <a class="team-card__link" href=" #">команда &gt;</a>
-                            </h2>
-                            <p class="team-card__descr">Ми звикли брати на себе відповідальність та завжди гарантуємо
-                                чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
-                            <h3 class="team-card__person">Оксана Кобзар</h3>
-                            <span class="team-card__post">Equity partner, Attorney-at-law</span>
+                            <h2 class="team-card__title"><a class="team-card__link" href="#">team &gt;</a></h2>
+                            <p class="team-card__descr">We are used to taking responsibility and always guarantee
+                                honest, timely help, even in situations where most are powerless.</p>
+                            <h3 class="team-card__person">Oksana Kobzar</h3><span class="team-card__post">Equity
+                                partner, Attorney-at-law</span>
                         </div>
                     </li>
                     <li class="team-card">
-                        <div class="team-card__image">
-                            <img class="team-card__img" src="images/team_3.png" alt="Foto Oleksandr Oleksandrovsky">
-                        </div>
+                        <div class="team-card__image"><img class="team-card__img" src="images/team_3.png"
+                                alt="Foto Oleksandr Oleksandrovsky"></div>
                         <div class="team-card__content">
-                            <h2 class="team-card__title">
-                                <a class="team-card__link" href=" #">команда &gt;</a>
-                            </h2>
-                            <p class="team-card__descr">Ми звикли брати на себе відповідальність та завжди гарантуємо
-                                чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
-                            <h3 class="team-card__person">Владислав Мельник</h3>
-                            <span class="team-card__post">Associate</span>
+                            <h2 class="team-card__title"><a class="team-card__link" href="#">team &gt;</a></h2>
+                            <p class="team-card__descr">We are used to taking responsibility and always guarantee
+                                honest, timely help, even in situations where most are powerless.</p>
+                            <h3 class="team-card__person">Vladislav Melnik</h3><span
+                                class="team-card__post">Associate</span>
                         </div>
                     </li>
                 </ul>
                 <ul class="card-switchers">
-                    <li>
-                        <label for="team-1" class="card__switcher"></label>
-                    </li>
-                    <li>
-                        <label for="team-2" class="card__switcher"></label>
-                    </li>
-                    <li>
-                        <label for="team-3" class="card__switcher"></label>
-                    </li>
+                    <li><label for="team-1" class="card__switcher"></label></li>
+                    <li><label for="team-2" class="card__switcher"></label></li>
+                    <li><label for="team-3" class="card__switcher"></label></li>
                 </ul>
             </div>
-    </section>
-
-    <!-- CLIENTS -->
-    @@include('components/clients.html')
-
+        </div>
+    </section><!-- CLIENTS --> @@include('components/clients.html')
     <!-- PUBLICATIONS -->
-    @@include('components/publications.html')
-
-    <!-- FOOTER -->
-    @@include('components/footer.html')
+    <section class="publications">
+        <div class="container">
+            <h2 class="publications__subtitle"><a class="publications__subtitle--link"
+                    href="publications.html">Publications &gt;</a></h2>@@include('components/publications.html')
+        </div>
+    </section><!-- FOOTER --> @@include('components/footer.html')
 </body>
 
 </html>

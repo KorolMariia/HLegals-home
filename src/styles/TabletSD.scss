@@ -1,25 +1,25 @@
-@import 'variables';@import 'mixins';
+@import 'variables';
+@import 'mixins';
 
 @media screen and (max-width: 1023px) {
   .main {
     .container {
       @include container(1980px, 0px);
     }
-    .splash {
-      .header__bar {
-        flex-direction: column;
 
-        .logo-container {
-          display: none;
-        }
+    .header__bar {
+      flex-direction: column;
 
-        .header-actions {
-          align-items: flex-start;
-          gap: 30px;
+      .logo-container {
+        display: none;
+      }
 
-          .tablet__logo {
-            display: block;
-          }
+      .header-actions {
+        align-items: flex-start;
+        gap: 30px;
+
+        .tablet__logo {
+          display: block;
         }
       }
     }

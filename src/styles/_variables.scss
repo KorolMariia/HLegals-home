@@ -1,5 +1,4 @@
-$primary-color: #f0145a;
-$base-text-color: #fff;
+$primary-color: #f0145a;$base-text-color: #fff;
 $base-title-color: #24a3ff;
 $base-fz: 16px;
 $base-radius: 0px 0px 12px 12px;
@@ -32,7 +31,7 @@ $base-radius: 0px 0px 12px 12px;
 }
 
 %footer-style-text {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 20px;
   text-decoration: none;
 }

@@ -39,6 +39,10 @@
     @include container();
   }
 
+  .other {
+    padding: 50px 0;
+  }
+
   .splash {
     min-height: 100vh;
     padding: 50px 0 30px;
@@ -50,105 +54,6 @@
     background-position: center;
     background-size: auto 100%;
 
-    #nav-trigger,
-    .nav-open,
-    .nav-close,
-    .tablet__logo {
-      display: none;
-    }
-
-    .header__bar {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-
-      .header-actions {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: clamp(16px, calc(20 / 1600 * 100vw), 20px);
-      }
-
-      .header-contacts {
-        display: flex;
-        gap: 6px;
-
-        .lang-list {
-          display: flex;
-          margin: 0;
-          padding: 0;
-          list-style: none;
-
-          .lang-link {
-            @extend %small-style-text;
-            padding: 5px 7px;
-            color: $base-text-color;
-
-            &:hover {
-              background: $primary-color;
-              border-radius: 8px;
-            }
-
-            &-active {
-              background: $primary-color;
-              border-radius: 8px;
-            }
-          }
-        }
-
-        .fas {
-          font-size: 6px;
-          align-self: center;
-          color: #e6e6f0;
-        }
-
-        &__adress {
-          @extend %nav-style-text;
-
-          &:hover {
-            @extend %base-hover;
-          }
-        }
-
-        &__tel {
-          @extend %nav-style-text;
-          font-weight: 700;
-
-          &:hover {
-            @extend %base-hover;
-          }
-        }
-
-        &__social-link {
-          font-size: 20px;
-          color: $base-text-color;
-          text-decoration: none;
-
-          &:hover {
-            color: $primary-color;
-          }
-        }
-      }
-
-      .nav {
-        &__list {
-          display: flex;
-          gap: 15px;
-          margin: 0;
-          padding-left: 0;
-          list-style: none;
-        }
-
-        &__link {
-          @extend %nav-style-text;
-          font-weight: 700;
-
-          &:hover {
-            @extend %base-hover;
-          }
-        }
-      }
-    }
     &__title {
       @extend %lagre-style-text;
       margin: 0;
@@ -164,6 +69,115 @@
       }
     }
   }
+
+  #nav-trigger,
+  .nav-open,
+  .nav-close,
+  .tablet__logo {
+    display: none;
+  }
+
+  .header__bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .header-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: clamp(16px, calc(20 / 1600 * 100vw), 20px);
+    }
+
+    .header-contacts {
+      display: flex;
+      gap: 6px;
+
+      .lang-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        .lang-link {
+          @extend %small-style-text;
+          padding: 5px 7px;
+          color: $base-text-color;
+
+          &:hover {
+            background: $primary-color;
+            border-radius: 8px;
+          }
+
+          &-active {
+            background: $primary-color;
+            border-radius: 8px;
+          }
+        }
+      }
+
+      .fas {
+        font-size: 6px;
+        align-self: center;
+        color: #e6e6f0;
+      }
+
+      &__adress {
+        @extend %nav-style-text;
+
+        &:hover {
+          @extend %base-hover;
+        }
+      }
+
+      &__tel {
+        @extend %nav-style-text;
+        font-weight: 700;
+
+        &:hover {
+          @extend %base-hover;
+        }
+      }
+
+      &__social-link {
+        font-size: 20px;
+        color: $base-text-color;
+        text-decoration: none;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .nav {
+      &__list {
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+      }
+
+      &__link {
+        @extend %nav-style-text;
+        font-weight: 700;
+
+        &:hover {
+          @extend %base-hover;
+        }
+
+        &:active {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.hedaer-for-pages {
+  margin-bottom: 0;
+  padding: 30px 0;
 }
 
 .experience {
@@ -193,11 +207,6 @@
         margin: 0;
         @extend %lagre-style-text;
         color: #b3b3ba;
-
-        &:hover {
-          color: $primary-color;
-          cursor: pointer;
-        }
       }
 
       .experience__item.active {
@@ -237,7 +246,7 @@
   &__subtitle {
     margin: 0 0 10px;
   }
-  &__link,
+  &__minilink,
   .fa-solid {
     text-decoration: none;
     @extend %base-subtitle;
@@ -265,26 +274,34 @@
       flex-grow: 1;
       flex-basis: calc((100% / 3) - 60px);
 
-      &--icon {
-        margin-bottom: 30px;
-        padding: 14px;
-        background: $base-text-color;
-        border-radius: 24px;
-      }
+      .services__link {
+        text-decoration: none;
 
-      &--subtitle {
-        margin: 0 0 15px;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 27px;
-        color: $base-title-color;
-      }
+        &--icon {
+          margin-bottom: 30px;
+          padding: 14px;
+          background: $base-text-color;
+          border-radius: 24px;
+        }
 
-      &--content {
-        margin: 0;
-        font-size: $base-fz;
-        line-height: 26px;
-        color: $base-text-color;
+        &--subtitle {
+          margin: 0 0 15px;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 27px;
+          color: $base-title-color;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+
+        &--content {
+          margin: 0;
+          font-size: $base-fz;
+          line-height: 26px;
+          color: $base-text-color;
+        }
       }
     }
   }
@@ -554,6 +571,7 @@
       border-radius: 8px;
       overflow: hidden;
       background-color: #fff;
+      margin-bottom: 30px;
 
       .publications__link {
         text-decoration: none;
@@ -594,10 +612,6 @@
           line-height: 22px;
           color: #000000;
           border-top: 4px solid #e6e6f0;
-
-          &:hover {
-            @extend %base-hover;
-          }
         }
       }
     }

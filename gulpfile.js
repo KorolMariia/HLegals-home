@@ -1,5 +1,4 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
+const gulp = require('gulp');const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const htmlmin = require('gulp-htmlmin');
@@ -84,6 +83,6 @@ exports.default = gulp.series(
   htmlTask,
   sassTask,
   imageTask,
-  htmlIncludeTask,
+  // htmlIncludeTask,
   watchTask,
 );
