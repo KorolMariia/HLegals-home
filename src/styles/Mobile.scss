@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 @media screen and (max-width: 767px) {
   .main {
@@ -10,7 +10,7 @@
       @include container(1980px, 0px);
     }
 
-    .header {
+    .splash {
       padding-top: 0;
       gap: 0;
 
@@ -18,7 +18,7 @@
         display: block;
       }
 
-      &__bar {
+      .header__bar {
         padding: 0;
         flex-direction: column-reverse;
 

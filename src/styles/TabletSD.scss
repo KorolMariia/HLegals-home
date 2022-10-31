@@ -1,14 +1,12 @@
-@import "variables";
-@import "mixins";
+@import 'variables';@import 'mixins';
 
 @media screen and (max-width: 1023px) {
   .main {
     .container {
       @include container(1980px, 0px);
     }
-
-    .header {
-      &__bar {
+    .splash {
+      .header__bar {
         flex-direction: column;
 
         .logo-container {

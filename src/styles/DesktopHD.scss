@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 .main {
   position: relative;
@@ -14,7 +14,7 @@
   border-radius: $base-radius;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 100%;
     right: 20px;
@@ -25,7 +25,7 @@
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: calc(100% + 10px);
     right: 40px;
@@ -39,13 +39,13 @@
     @include container();
   }
 
-  .header {
+  .splash {
     min-height: 100vh;
     padding: 50px 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url("../images/logo-symbol.svg");
+    background-image: url('../images/logo-symbol.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
@@ -57,7 +57,7 @@
       display: none;
     }
 
-    &__bar {
+    .header__bar {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
