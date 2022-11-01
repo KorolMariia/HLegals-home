@@ -83,6 +83,6 @@ exports.default = gulp.series(
   htmlIncludeTask,
   sassTask,
   imageTask,
-  // htmlTask,
+  htmlTask,
   watchTask,
 );

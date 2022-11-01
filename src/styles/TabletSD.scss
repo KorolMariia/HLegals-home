@@ -1,5 +1,4 @@
-@import 'variables';
-@import 'mixins';
+@import 'variables';@import 'mixins';
 
 @media screen and (max-width: 1023px) {
   .main {
@@ -89,6 +88,16 @@
     &-contacts-2,
     &-copy {
       white-space: nowrap;
+    }
+  }
+
+  .about__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
+    .about__intro {
+      padding-right: 0;
     }
   }
 }

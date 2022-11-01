@@ -248,4 +248,28 @@
       }
     }
   }
+
+  .about {
+    .container {
+      @include container(1980px, 30px);
+    }
+
+    &__wrapper {
+      margin-bottom: 30px;
+    }
+
+    &__container {
+      margin-bottom: 30px;
+    }
+
+    .achievements__container {
+      @include container(1980px, 30px);
+
+      .achievements__grid {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  }
 }

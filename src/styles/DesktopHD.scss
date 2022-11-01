@@ -705,3 +705,128 @@
     }
   }
 }
+
+.about {
+  padding: 60px 0 0;
+
+  .container {
+    @include container(2240px, 280px);
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+
+    .about__list {
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 30px;
+      border-left: 4px solid #e6e6f0;
+
+      .about__item {
+        margin: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #323264;
+
+        &--title {
+          @extend %base-gradient-title;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin: 0 0 10px;
+        }
+      }
+    }
+
+    .about__intro {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      padding-right: 30px;
+
+      &--title {
+        @extend %base-gradient-title;
+        margin: 0;
+      }
+
+      &--content {
+        margin: 0;
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+      }
+    }
+  }
+
+  &__container {
+    padding: 0;
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+
+    .about__img {
+      width: 100%;
+
+      &--content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        font-weight: 700;
+        font-size: clamp(36px, calc(96 / 1600 * 100vw), 96px);
+        line-height: clamp(44px, calc(117 / 1600 * 100vw), 117px);
+        text-align: center;
+        letter-spacing: clamp(13px, calc(63 / 1600 * 100vw), 63px);
+        text-transform: uppercase;
+        color: #ffffff;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+      }
+    }
+  }
+
+  .achievements__container {
+    background-color: #f5f5fa;
+    @include container();
+
+    .achievements__title {
+      padding: 30px 0;
+      text-align: center;
+      font-weight: 700;
+      @extend %base-subtitle;
+      color: #323264;
+    }
+
+    .achievements__grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 0;
+      padding-left: 0;
+      list-style: none;
+
+      .achievements__item {
+        display: flex;
+        justify-content: center;
+        height: 110px;
+        width: 220px;
+        padding: 20px;
+        background-color: #fff;
+
+        &--logo {
+          max-width: 100%;
+          align-self: center;
+        }
+      }
+    }
+  }
+}

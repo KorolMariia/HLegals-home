@@ -1,5 +1,4 @@
-@import "variables";
-@import "mixins";
+@import 'variables';@import 'mixins';
 
 @media screen and (max-width: 1919px) {
   .main {
@@ -45,6 +44,16 @@
   .publications,
   .footer {
     .container {
+      @include container(2040px, 60px);
+    }
+  }
+
+  .about {
+    .container {
+      @include container(2040px, 180px);
+    }
+
+    .achievements__container {
       @include container(2040px, 60px);
     }
   }
